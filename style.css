@@ -23,7 +23,7 @@ h1{
 .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 /*.container-1{
@@ -38,7 +38,7 @@ h1{
 .card {
     border: .3rem solid gold;
     background-color: black;
-    width: 28%;
+    width: 21%;
     color: white;
     font-size: 3rem;
     display: flex;
