@@ -1,7 +1,7 @@
 body, 
 html, 
 *{
-    background-color: rgb(116, 90, 141) ;
+    background-color: rgb(162, 93, 228) ;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,6 +10,9 @@ html,
 h1{
     text-align: center;
     font-size: 4rem;
+    padding: 1rem;
+    font-family: cursive;
+
 }
 .img{
     height: 80%;
@@ -26,9 +29,9 @@ h1{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-/*.container-1{
+.container-1{
 
-}*/
+}
 .container-2{
     margin-top: 5rem;
 }
@@ -36,7 +39,8 @@ h1{
     margin-top: 5rem;
 }
 .card {
-    border: .3rem solid gold;
+    border-radius: 1.5rem;
+    border: .5rem solid gold;
     background-color: black;
     width: 21%;
     color: white;
@@ -45,8 +49,25 @@ h1{
     flex-direction: column; /* Stacks image and text vertically */
     align-items: center; /* Centers items horizontally */
     text-align: center; /* Centers text */
+    box-shadow: .4rem .4rem .4rem .4rem silver;
+    box-sizing: content-box;
 }
-.usc{
-    margin-top: 2rem;
-    height: 60%;
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.button{
+    border-radius: 1.5rem;
+    background-color: black;
+    color: white;
+}
+#usc{
+    margin-top: .6rem;
+    height: 90%;
+}
+.container:hover .card:not(:hover){
+    transition: 0.8s;
+    transform: scale(0.6);
+    opacity: 0.2;
 }
