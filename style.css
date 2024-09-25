@@ -7,6 +7,7 @@ html,
     box-sizing: border-box;
     font-size: 62.5%;
 }
+
 h1{
     text-align: center;
     font-size: 4rem;
@@ -44,7 +45,8 @@ h1{
     box-sizing: content-box;
 }
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    transform: translateY(-3rem);
     transition: 0.5s;
 }
 
@@ -72,8 +74,42 @@ h1{
 .container:hover .card:not(:hover){
     transition: 0.8s;
     transform: scale(0.6);
+    transform-origin: 3rem;
     opacity: 0.2;
 }
 #usc{
     margin-top: 1rem;
+}
+@media (max-width: 1200px) {
+    font-size: 62.5%;
+    .card{
+        width: 21%;
+    }
+}
+@media (max-width: 1024px) {
+    font-size: 55%;
+    .container {
+        flex-direction: column;
+    }
+    .card {
+        width: 20%;
+    }
+  }
+  @media (max-width: 768px) {
+    font-size: 40%;
+    .container {
+        flex-direction: column;
+    }
+    .card {
+        width: 45%;
+    }
+}
+@media (max-width: 480px) {
+        font-size: 40%;
+        .container {
+            flex-direction: column;
+        }
+        .card {
+            width: 38%;
+        }
 }
